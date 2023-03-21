@@ -1,0 +1,18 @@
+.about__grid {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  gap: 10px;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-gap: 2em;
+}
+
+.myImage__container {
+  text-align: center;
+}
+
+.myImage__about {
+  width: 80%;
+  border-radius: 50%;
+}
