@@ -1,3 +1,18 @@
 .contact {
   flex-direction: column;
 }
+
+.contact__box {
+  display: flex;
+}
+
+.mail__box {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.mail {
+  width: 30%;
+  margin: 0 auto;
+  margin-top: 1rem;
+}

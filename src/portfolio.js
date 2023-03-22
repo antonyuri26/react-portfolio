@@ -12,6 +12,7 @@ import surftrip1 from "./components/assets/surftrip/image1.png";
 import xtremesafety1 from "./components/assets/xtremesafety/image1.png";
 import xtremepricespy1 from "./components/assets/xtremepricespy/image1.png";
 import cryptotracker1 from "./components/assets/cryptotracker/image1.png";
+import resume from "./components/assets/Antonio_Resume.pdf";
 
 const header = {
   homepage: "https://rajshekhar26.github.io/cleanfolio",
@@ -23,7 +24,7 @@ const about = {
   role: "Front-End Developer",
   description:
     "I am an ethusiastic Front End Developer, eager to contribute my analytical and technical skills in a dynamic, client-focused team. Passionate about learning and applying new technologies. I am base in Sunshine Coast QLD.",
-  resume: "https://example.com", //link to my resume
+  resume: resume, //link to my resume
   social: {
     linkedin: "https://www.linkedin.com/in/antonio-souza26/",
     github: "https://github.com/antonyuri26",
@@ -45,8 +46,8 @@ const projects = [
       "Context API",
       "Material UI",
     ],
-    sourceCode: "https://github.com/antonyuri26/food-ordering-app",
-    livePreview: "https://food-ordering-app-77b44f.netlify.app/",
+    sourceCode: "https://github.com/antonyuri26/crypto-app",
+    livePreview: "https://crypto-tracker-app-react.netlify.app/",
     image: ReactCryptoTracker,
     gallery: cryptotracker1,
   },

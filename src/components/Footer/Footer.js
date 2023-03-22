@@ -8,6 +8,7 @@ const Footer = () => (
     >
       Created By Antonio Souza 2023
     </a>
+    <p className="footer__link">Sunchine Coast QLD Australia</p>
   </footer>
 );
 

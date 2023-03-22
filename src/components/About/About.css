@@ -1,11 +1,6 @@
 .about__grid {
   max-width: 1100px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 60% 40%;
-  gap: 10px;
-  /* grid-template-columns: repeat(3, 1fr); */
-  grid-gap: 2em;
 }
 
 .myImage__container {
@@ -13,6 +8,24 @@
 }
 
 .myImage__about {
-  width: 80%;
+  width: 32%;
   border-radius: 50%;
+  float: right;
+  shape-outside: circle();
+  padding-left: 1rem;
+}
+
+@media (max-width: 800px) {
+  .myImage__about {
+    width: 52%;
+    border-radius: 50%;
+    float: none;
+    margin-bottom: 1rem;
+  }
+  .myImage__container {
+    margin: 0 auto;
+  }
+  .about__grid {
+    text-align: center;
+  }
 }

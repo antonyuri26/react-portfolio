@@ -60,3 +60,23 @@
 .project .link--icon {
   margin-left: 0.5em;
 }
+
+@media (max-width: 800px) {
+  .project {
+    flex-direction: column;
+    /* margin-top: 2em; */
+  }
+
+  .project__details {
+    width: 100%;
+  }
+  .project__description {
+    padding-right: 0rem;
+  }
+  .image__gallery {
+    display: none;
+  }
+  .project__image {
+    width: 100%;
+  }
+}
