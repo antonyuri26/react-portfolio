@@ -1,5 +1,5 @@
 import LoadingButton from "@mui/lab/LoadingButton/LoadingButton";
-import { Button } from "@mui/material";
+
 import React, { useState } from "react";
 import "./Form.css";
 
@@ -23,8 +23,23 @@ const Form = () => {
     setComment(commentInput);
   };
 
+  const encode = (data) => {
+    return Object.keys(data)
+      .map(
+        (key) => encodeURIComponent(key) + "=" + encodeURIComponent(data[key])
+      )
+      .join("&");
+  };
+
   const formSubmissionHandler = (event) => {
     setSubmitting(true);
+    fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "contact", name, email, comment }),
+    })
+      .then(() => console.log("Success!"))
+      .catch((error) => alert(error));
     event.preventDefault();
     // console.log(name);
     // console.log(email);
@@ -51,6 +66,7 @@ const Form = () => {
             onSubmit={formSubmissionHandler}
           >
             <div className="form-group">
+              <input type="hidden" name="form-name" value="contact" />
               <label htmlFor="name">Name:</label>
               <input
                 type="text"
@@ -77,6 +93,7 @@ const Form = () => {
             <div className="form-group">
               <label htmlFor="comment">Comment:</label>
               <textarea
+                type="text"
                 id="comment"
                 name="comment"
                 required

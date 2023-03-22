@@ -34,6 +34,7 @@ const Hero = () => {
                 aria-label="github"
                 className="link link--icon"
                 target="_blank"
+                rel="noreferrer"
               >
                 <GitHubIcon />
               </a>
@@ -45,6 +46,7 @@ const Hero = () => {
                 aria-label="linkedin"
                 className="link link--icon"
                 target="_blank"
+                rel="noreferrer"
               >
                 <LinkedInIcon />
               </a>
