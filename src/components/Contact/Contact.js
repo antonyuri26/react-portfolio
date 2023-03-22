@@ -10,19 +10,16 @@ const Contact = () => {
       <h2 className="section__title">Contact</h2>
       <div className="contact__box">
         <Form />
-        <a href={`mailto:${contact.email}`}>
-          {/* <span type="button" className="btn btn--outline">
-            Email me
-          </span> */}
-        </a>
       </div>
       <div className="mail__box">
         <p>
           Alternatively use the link below to use your preferred email provider.
         </p>
-        <span type="button" className="btn btn--outline mail">
-          Email me
-        </span>
+        <a href={`mailto:${contact.email}`} target="_blank" rel="noreferrer">
+          <span type="button" className="btn btn--outline mail">
+            Email me
+          </span>
+        </a>
       </div>
     </section>
   );
